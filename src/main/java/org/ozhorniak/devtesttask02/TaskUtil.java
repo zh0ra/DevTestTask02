@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class TaskUtil {
 
-	public static void getenerateRandomIntSet(int size) throws FileNotFoundException {
+	public static void getenerateRandomIntSet(int size, int scope) throws FileNotFoundException {
 		
 		System.out.println("Generate large set of itegers ...");
 		
@@ -20,7 +20,7 @@ public class TaskUtil {
 			Random random = new Random();
 
 			for (int i = 0; i < size; i++) {
-				a[i] = random.nextInt(100);
+				a[i] = random.nextInt(scope);
 			}
 			for (int i = 0; i < a.length; i++) {
 				printWriter.print(" " + a[i]);
@@ -47,9 +47,9 @@ public class TaskUtil {
 
 		List<Integer> inputList = new ArrayList<Integer>();
 
-		Scanner in = new Scanner(new File("input_int.txt"));
+		//Scanner in = new Scanner(new File("input_int.txt"));
 
-		// Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 
 		while (in.hasNext()) {
 			inputList.add(in.nextInt());

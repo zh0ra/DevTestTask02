@@ -4,7 +4,12 @@
   <artifactId>DevTestTask02</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>DevTestTask02</name>
-  <description>Developer test task 01</description>
+  <description>Developer Test::Task 01</description>
+        <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
   <build>
     <plugins>
       <plugin>
