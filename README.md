@@ -14,4 +14,4 @@ expected output is:
 6 7
 
 Solution:
-Use standard library of Arrays for sorting and adapting binary find pairs of sum up to 13.   
+I used standard library of Arrays for sorting and adapting binary find pairs of sum up to 13.   
